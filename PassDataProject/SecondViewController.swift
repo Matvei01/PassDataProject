@@ -9,9 +9,10 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    var login: String?
+    
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var button: UIButton!
+    var login: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +27,6 @@ class SecondViewController: UIViewController {
     @IBAction func goBackTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "unwindSegue", sender: nil)
     }
-    
-    
-    }
+}
     
 

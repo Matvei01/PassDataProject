@@ -53,10 +53,11 @@
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Byh-TV-h0Y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRJ-FE-JCS">
-                                <rect key="frame" x="128" y="678" width="158" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-1R-i09">
+                                <rect key="frame" x="108" y="519" width="198" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="zZC-f4-DeF"/>
+                                    <constraint firstAttribute="height" constant="64" id="8AP-df-cYd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="198" id="Ze1-Hf-Inp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -67,9 +68,9 @@
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bUJ-h9-If8" firstAttribute="top" secondItem="Se6-Gu-1n0" secondAttribute="bottom" constant="116" id="4iR-L9-iNp"/>
-                            <constraint firstItem="zRJ-FE-JCS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BnB-LF-idB"/>
+                            <constraint firstItem="fhL-1R-i09" firstAttribute="top" secondItem="bUJ-h9-If8" secondAttribute="bottom" constant="15" id="FdV-Wm-wfj"/>
                             <constraint firstItem="HXz-yD-fzA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lyw-Ww-AlS"/>
-                            <constraint firstItem="zRJ-FE-JCS" firstAttribute="top" secondItem="bUJ-h9-If8" secondAttribute="bottom" constant="174" id="bEz-E4-eb5"/>
+                            <constraint firstItem="fhL-1R-i09" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d3B-07-BOk"/>
                             <constraint firstItem="bUJ-h9-If8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hfX-Zt-WRP"/>
                             <constraint firstItem="Se6-Gu-1n0" firstAttribute="top" secondItem="HXz-yD-fzA" secondAttribute="bottom" constant="109" id="jt3-Oi-Fu5"/>
                             <constraint firstItem="HXz-yD-fzA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="kU3-4A-YII"/>
@@ -78,11 +79,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="labelResult" destination="zRJ-FE-JCS" id="ezI-wy-YOs"/>
+                        <outlet property="labelResult" destination="fhL-1R-i09" id="7l9-Jc-2at"/>
                         <outlet property="loginButton" destination="bUJ-h9-If8" id="9d8-Hc-zWo"/>
                         <outlet property="loginTF" destination="SvG-lE-KuA" id="XDA-Ul-fcq"/>
                         <outlet property="passwordTF" destination="mPy-aY-loQ" id="vNd-s2-ndC"/>
-                        <segue destination="Bb8-sW-XZs" kind="show" identifier="detailSegue" id="9FI-Gc-pIn"/>
+                        <segue destination="Bb8-sW-XZs" kind="presentation" identifier="detailSegue" modalPresentationStyle="fullScreen" id="9FI-Gc-pIn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,7 +95,7 @@
             <objects>
                 <viewController id="Bb8-sW-XZs" customClass="SecondViewController" customModule="PassDataProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bho-na-gfQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ia-Th-K2k">
